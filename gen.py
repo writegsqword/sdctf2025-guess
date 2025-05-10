@@ -10,7 +10,7 @@ def write_file(fname, content):
     #with open(fname, "w") as f:
     #    f.write(content)
     zip_file.writestr(fname, content)
-lim = 125000000 * 8
+lim = 125000000 * 4
 #ideal step size is 1136 but i dont want to deal with round errors
 for i in range(-lim, lim, 2000):
     write_file(f"{i}.txt", str(i))
