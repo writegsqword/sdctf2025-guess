@@ -10,7 +10,7 @@ def write_file(fname, content):
     #with open(fname, "w") as f:
     #    f.write(content)
     zip_file.writestr(fname, content)
-lim = 50000
+lim = 5000000
 for i in range(0, lim, 50):
     write_file(f"{i}.txt", str(i))
 
